@@ -3,13 +3,29 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --orange-100: 13 100% 96%;
-        --orange-400: 12 88% 59%;
+  :root {
+    --orange-100: 13 100% 96%;
+    --orange-400: 12 88% 59%;
 
-        --gray-100: 0 0% 98%;
-        --gray-200: 227 12% 61%;
-        --gray-700: 228 39% 23%;
-        --gray-800: 233 12% 13%;
-    }
+    --gray-100: 0 0% 98%;
+    --gray-200: 227 12% 61%;
+    --gray-700: 228 39% 23%;
+    --gray-800: 233 12% 13%;
+  }
+}
+
+.swiper-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+    @apply flex justify-center gap-1 my-4
+}
+
+.swiper-pagination-bullet {
+  @apply md:hidden size-3 rounded-full border-2 border-app-orange-400;
+}
+.swiper-pagination-bullet-active {
+    @apply bg-app-orange-400
 }
