@@ -13,7 +13,7 @@ export default function App() {
             <Features />
             <Testimonials />
             <SimplifySection />
-            {/* <Footer /> */}
+            <Footer />
         </>
     );
 }
